@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.judulCard {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.judulHeader {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+body {
+  background-color: #ffffff;
+  padding: 40px;
+  font-family: 'Poppins';
+  color: #000000;
+}
+
+ul li {
+  list-style: none;
+}
+
+.data-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid black 2px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 40px;
+}
+
+.inputTitle,
+.inputDesc,
+.addButton {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.addButton {
+  background-color: #04d5ff;
+  width: 90px;
+  color: rgb(255, 255, 255);
+  border: solid black 2px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+.addButton:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.card {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 35px;
+  padding: 20px;
+  width: 20%;
+  background-color: #f9f9f9;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fade-in 1s ease-out;
+}
+
+.card .container {
+  flex: 1;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.card .container .anime {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card .container .descr {
+  color: #777;
+  font-size: 15px;
+}
+
+.data-item_delete {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  color: white;
+  border-style: none;
+  background-color: red;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  animation: fade-in 1s ease-out;
+}
+
+.inputFile {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.inputField {
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.data-item_edit {
+  font-size: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.data-item_edit:hover {
+  background-color: #04d5ff;
+  color: white;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.data-item_save {
+  background-color: #45a049;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.data-item_cancel {
+  background-color: #cb0f0f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.data-item_save:hover {
+  background-color: #44c449;
+}
+
+.data-item_cancel:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.editTitle{
+  width: 100%;
+  height: 30px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+
+.editDesc {
+  width: 100%;
+  height: 100px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+  resize: vertical;
+}
+
+.descr {
+  margin-bottom: 30px;
+}
+
+.jdulCardin{
+  margin-bottom: 20px
+}
+
+.inputFile{
+  text-align: left;
+}
+
+.notFound{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.labelText {
+  justify-content: center;
+  font-weight: bold;
+  color: #04d5ff;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  transition: color 0.3s;
+}
+
+.labelText:hover {
+  color: #ff0000;
+}
